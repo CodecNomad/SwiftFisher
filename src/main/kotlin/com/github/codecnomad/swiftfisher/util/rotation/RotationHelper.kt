@@ -26,7 +26,7 @@ object RotationHelper {
         val n: Int = controlPoints.size
         var x = 0f
 
-        for (i in 0 until n) { // This may be wrong
+        for (i in 0 until n) {
             x += binomialCoefficient(n, (i + 1)) * (1 - t).pow(n - (i + 1)) * t.pow(i + 1) * controlPoints[i]
         }
 
